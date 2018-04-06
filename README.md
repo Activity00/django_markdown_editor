@@ -8,13 +8,18 @@ for javascript.
     
 # Basic settings
 
-add 'markdown_editor' to your django settings INSTALLED_APPS
+Add "markdown_editor" to your INSTALLED_APPS setting like this:
  ```
  INSTALLED_APPS = [
     '''
     'markdown_editor',
 ]
 ```
+
+Include the markdown_editor URLconf in your project urls.py like this:
+
+    path('markdown_editor/', include('markdown_editor.urls'))
+
 
 if image upload needed add this to setting
 
@@ -49,4 +54,4 @@ and excute
     
 view django admin
 
-[预览](demo.JPG)
+![预览](demo.JPG)
